@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIEN LAUNDRY 이엔전자</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner-wrap">
+                <h1 class="logo">
+                    <a href="main.html"><img src="http://img.entv.co.kr/laundry/logo.png" alt="디엔세탁기 로고"></a>
+                </h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="main.html">홈</a></li>
+                        <li class="menu-intro"><a href="brand_type.html">세탁장비소개</a></li>
+                        <li class="menu-profit"><a href="product_profit.html">제품수익성</a></li>
+                        <li class="menu-example"><a href="product_example.html">설치사례</a></li>
+                        <li class="menu-consult"><a href="#none">컨설팅상담</a></li>
+                    </ul>
+                </nav>
+                <div class="head-tel">
+                    <p>010-8844-0409</p>
+                </div>
+            </div>
+        </header>
+        <div class="container sub">
+            <section class="product-example">
+                <div class="inner-wrap">
+                    <h2 class="sec-title">오션투유 리조트 세탁절감사례</h2>
+                    <ul class="example-list">
+                        <li>
+                            <div class="thumb">
+                                <img src="http://img.entv.co.kr/laundry/example01.jpg" alt="오션투유 세탁기 설치사례">
+                            </div>
+                            <span class="text">오션투유 세탁기 설치사례</span>
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <img src="http://img.entv.co.kr/laundry/example02.jpg" alt="오션투유 건조기 설치사례">
+                            </div>
+                            <span class="text">오션투유 건조기 설치사례</span>
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <img src="http://img.entv.co.kr/laundry/example03.jpg" alt="오션투유 설치사례">
+                            </div>
+                            <span class="text">오션투유 다림기 설치사례</span>
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <img src="http://img.entv.co.kr/laundry/example04.jpg" alt="오션투유 폴딩기 설치사례">
+                            </div>
+                            <span class="text">오션투유 폴딩기 설치사례</span>
+                        </li>
+                    </ul><!-- //example-list -->
+                </div>
+            </section>
+            <section class="product-delivery">
+                <img src="http://img.entv.co.kr/laundry/bg-product_delivery.jpg" alt="호텔 및 관공서에 전자제품 납품"
+                    usemap="#product-map">
+                <!-- PC -->
+                <map name="product-map">
+                    <!-- UHD TV제작 -->
+                    <area shape="circle" coords="996,463,103" alt="UHD TV제작"
+                        href="https://smartstore.naver.com/entv/products/4749635792" target="_blank">
+                    <area shape="circle" coords="165,982,77" alt="UHD TV제작"
+                        href="https://smartstore.naver.com/entv/products/4749635792" target="_blank">
+                    <!-- SMART TV제작 -->
+                    <area shape="circle" coords="1284,460,103" alt="SMART TV제작"
+                        href="https://smartstore.naver.com/entv/products/4993492323" target="_blank">
+                    <area shape="circle" coords="376,981,79" alt="SMART TV제작"
+                        href="https://smartstore.naver.com/entv/products/4993492323" target="_blank">
+                    <!-- 천장형 브라켓 -->
+                    <area shape="circle" coords="1571,462,103" alt="천장형 브라켓"
+                        href="https://smartstore.naver.com/entv/products/4963032028" target="_blank">
+                    <area shape="circle" coords="584,979,79" alt="천장형 브라켓"
+                        href="https://smartstore.naver.com/entv/products/4963032028" target="_blank">
+                    <!-- 음식물처리기 -->
+                    <area shape="circle" coords="995,804,103" alt="음식물처리기"
+                        href="https://smartstore.naver.com/entv/products/5639063280" target="_blank">
+                    <area shape="circle" coords="161,1226,79" alt="음식물처리기"
+                        href="https://smartstore.naver.com/entv/products/5639063280" target="_blank">
+                    <!-- 사운드바 -->
+                    <area shape="circle" coords="1571,804,103" alt="사운드바"
+                        href="https://smartstore.naver.com/entv/category/19a5c6cfbf73401199d5e4ec98f5ae32?cp=1"
+                        target="_blank">
+                    <area shape="circle" coords="581,1222,79" alt="사운드바"
+                        href="https://smartstore.naver.com/entv/category/19a5c6cfbf73401199d5e4ec98f5ae32?cp=1"
+                        target="_blank">
+                </map>
+                <script src="http://static.intoraon.co.kr/js/imgmap.js"></script>
+                <script>
+                    $(function () {
+                        $('.product-delivery img[usemap]').rwdImageMaps();
+                        $(".product-delivery img").width("100%");
+                        $(window).resize(function () {
+                            var winWidth = window.innerWidth,
+                                eventImg = $('.product-delivery img')
+                            if (winWidth < 991) {
+                                eventImg.attr('src', 'http://img.entv.co.kr/laundry/bg-product_delivery-m.jpg')
+                            } else {
+                                eventImg.attr('src', 'http://img.entv.co.kr/laundry/bg-product_delivery.jpg')
+                            }
+                        }).resize();
+                    });
+                </script>
+            </section>
+            <section class="product-vendor">
+                <img class="pc-img" src="http://img.entv.co.kr/laundry/bg-vendor.jpg" alt="이엔전자 가전제품 납품업체 리스트">
+                <img class="m-img" src="http://img.entv.co.kr/laundry/bg-vendor_m.jpg" alt="이엔전자 가전제품 납품업체 리스트">
+            </section>
+            <section class="product-operation">
+                <img class="pc-img" src="http://img.entv.co.kr/laundry/bg-product_operation.jpg" alt="호텔/리조트 위탁 운영사업">
+                <img class="m-img" src="http://img.entv.co.kr/laundry/bg-product_operation_m.jpg" alt="호텔/리조트 위탁 운영사업">
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="inner-wrap">
+                <div class="top-footer">
+                    <div class="cs-tel">
+                        <span>고객센터/구입문의</span>
+                        <p>010-8844-0409</p>
+                    </div><!-- Cs-Tel -->
+
+                    <div class="address">
+                        <p>
+                            <span>(주)이엔전자</span>
+                            <span>대표이사: 최재영</span>
+                            <span>서울특별시 강남구 테헤란로82길 15,(대치동 DI타워 4층)</span>
+                            <br>
+                            <span>사업자등록번호 : 220-88-95318</span>
+                            <span>통신판매업신고번호 : 제2019-서울강남-02623호</span>
+                            <span> 팩스번호 : 02-6255-3096</span>
+                        </p>
+                        <strong>COPYRIGHT ⓒ ENTV. ALL RIGHTS RESERVED.</strong>
+                    </div>
+                </div><!-- //Top-Footer -->
+            </div>
+            <div class="bottom-footer">
+                <div class="inner-wrap">
+                    <ul>
+                        <li><img src="http://img.entv.co.kr/renew/footer_mark01.png" alt="벤처기업 기술보증기금"></li>
+                        <li><img src="http://img.entv.co.kr/renew/footer_mark02.png" alt="기술혁신형중소기업"></li>
+                        <li><img src="http://img.entv.co.kr/renew/footer_mark03.png" alt="병역특례업체 병무청"></li>
+                        <li><img src="http://img.entv.co.kr/renew/footer_mark04.png" alt="모범납세인증 서울지방국세청장"></li>
+                        <li><img src="http://img.entv.co.kr/renew/footer_mark05.png" alt="서울모범납세인증 모범납세자 선정"></li>
+                        <li><img src="http://img.entv.co.kr/renew/footer_gong.png" alt="공정거래위원회"></li>
+                        <li><img src="http://img.entv.co.kr/renew/footer_escrowcmark.png" alt="KB에스크로이체"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        <!-- SideBanner -->
+        <div class="side-banner subpage-banner">
+            <ul>
+                <li>
+                    <a href="tel:010-8844-0409">
+                        <img class="pc-img" src="http://img.entv.co.kr/laundry/side_banner_tel.png"
+                            alt="디엔 런더리 문의전화 010-8844-0409">
+                        <img class="m-img" src="http://img.entv.co.kr/laundry/side_banner_tel-m.jpg"
+                            alt="디엔 런더리 문의전화 010-8844-0409">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- //SideBanner -->
+    </div>
+</body>
+
+</html>
